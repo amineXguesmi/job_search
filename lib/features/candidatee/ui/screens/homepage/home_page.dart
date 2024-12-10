@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:/job_search/features/entreprise/data/datasources/get_data.dart';
+import 'package:job_search/features/candidatee/data/datasources/get_data.dart';
 import 'package:job_search/features/shared_features/ui/widgets/app_bar.dart';
 import 'package:job_search/features/shared_features/ui/widgets/category_bar.dart';
 import 'package:job_search/features/shared_features/ui/widgets/greetings_text.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:job_search/features/entreprise/data/models/job_model.dart';
+import 'package:job_search/features/candidatee/data/models/job_model.dart';
 
 class JobViewPage extends StatefulWidget {
   const JobViewPage({super.key, required this.model});

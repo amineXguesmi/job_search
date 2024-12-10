@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:/job_search/features/entreprise/data/datasources/get_data.dart';
+import 'package:job_search/features/candidatee/data/datasources/get_data.dart';
 
-import 'package:job_search/features/entreprise/ui/screens/job_view/job_view.dart';
+import 'package:job_search/features/candidatee/ui/screens/job_view/job_view.dart';
 
 class RecentColumn extends StatelessWidget {
   const RecentColumn({
