@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import '../../../../presentation/presentation.dart';
+
 class CategoryBar extends StatelessWidget {
   const CategoryBar({super.key, required this.title});
 
@@ -10,13 +12,16 @@ class CategoryBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          title,
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 21),
+        Padding(
+          padding: const EdgeInsets.only(left: Dimensions.xxxs),
+          child: Text(
+            title,
+            style: TextStyles.title2Medium(),
+          ),
         ),
-        const Text(
+        Text(
           "Show All",
-          style: TextStyle(fontSize: 15),
+          style: TextStyles.calloutMedium(color: Colors.grey.shade700),
         )
       ],
     );

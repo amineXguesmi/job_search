@@ -169,7 +169,10 @@ class _StartupScreenState extends State<StartupScreen> with WidgetsBindingObserv
                         FadeInUp(
                           duration: const Duration(milliseconds: 1000),
                           child: MaterialButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              FocusScope.of(context).unfocus();
+                              Navigator.pushNamed(context, '/home');
+                            },
                             color: Colors.orange[900],
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),

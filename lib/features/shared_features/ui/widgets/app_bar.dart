@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_search/presentation/presentation.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -10,18 +11,13 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          width: 50,
-          height: 50,
-          decoration: BoxDecoration(
-              color: Colors.white,
-              border: Border.all(color: Colors.grey.shade400),
-              borderRadius: BorderRadius.circular(15)),
-          child: const Icon(Icons.menu),
-        ),
-        const Text(
-          "Creative Jobs",
-          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+
+        const Padding(
+          padding: EdgeInsets.only(left: Dimensions.xxxs),
+          child: Text(
+            "Creative Jobs",
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          ),
         ),
         Container(
           width: 50,

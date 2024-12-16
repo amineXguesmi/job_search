@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../presentation/presentation.dart';
+
 class GreetingsText extends StatelessWidget {
   const GreetingsText({
     super.key,
@@ -7,23 +9,17 @@ class GreetingsText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           "Good Morning Alexa",
-          style: TextStyle(color: Colors.grey, fontSize: 17),
+          style: TextStyles.buttonMedium(color: Colors.grey.shade600),
         ),
-        SizedBox(
-          height: 10,
-        ),
+        xxxsSpacer(),
         Text(
-          "Find Your \nCreative Job",
-          style: TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
-              height: 0.9),
-        ),
+          "Find Your Creative Job",
+          style: TextStyles.title2Medium(color: Colors.black),),
       ],
     );
   }

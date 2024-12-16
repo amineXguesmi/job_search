@@ -8,4 +8,5 @@ class Assets{
 
   static const String entrepriseImage = 'assets/entreprise.png';
   static const String candidateImage = 'assets/candidate.png';
+  static const String searchImage = 'assets/search.svg';
 }

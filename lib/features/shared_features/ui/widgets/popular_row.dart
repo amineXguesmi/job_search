@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:job_search/features/candidatee/ui/screens/job_view/job_view.dart';
-import 'package:job_search/features/candidatee/data/datasources/get_data.dart';
+import 'package:job_search/features/candidate/ui/screens/job_view/job_view.dart';
+import 'package:job_search/features/candidate/data/datasources/get_data.dart';
 
 class PopularRow extends StatelessWidget {
   const PopularRow({
@@ -86,9 +86,6 @@ class JobCard extends StatelessWidget {
                 const SizedBox(
                   width: 8,
                 ),
-                // Chip(
-                //     labelPadding: const EdgeInsets.all(0),
-                //     label: Text(data.getJobData()[index].type))
                 Container(
                   padding: const EdgeInsets.all(2),
                   decoration: BoxDecoration(
